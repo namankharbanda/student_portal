@@ -8,26 +8,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <title>Student Management Portal</title>
-    <script src="main2.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
     <form>
-        <h2>Student Management Portal</h2>
-        <label>roll_no</label>
-        <input type=text id="rollno" />
-        <label>Name</label>
-        <input type=text id="name" />
-        <label>Passout Year:</label>
-        <input type=text id="year" />
-        <label>Stream:</label>
-        <input type=text id="stream" />
-        <input type="button" value="Add" onclick="input_data()" />
-        <input type="button" value="Delete" onclick="deleteRow()" />
-        <input type="button" value="Edit" onclick="edit()" />
-        <h3> Student Details:</h3>
+        <h2><center><font color="white">Student Management Portal</font></center></h2><br/><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><font color="crimson">RollNo:</font></label>
+        <input  type=text id="rollno" required/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><font color="crimson">Name:</font></label>
+        <input  type=text id="name" required/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><font color="crimson">Passout Year:</font></label>
+        <input  type=text id="year" required/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><font color="crimson">Stream:</font></label>
+        <input type=text id="stream" required/><br/><br/>
+        <center>
+         <input id="onclick" type="button" value="Add" onclick="input_data()" />&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="onclick" type="button" value="Delete" onclick="deleteRow()" />&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="onclick" type="button" value="Edit" onclick="edit()" /></center><br/><br/><br/><br/>
+        <h3><center> <font color="white">Student Details:</font></center></h3>
         <hr>
     </form>
 
@@ -36,10 +37,10 @@
             <table class="table" id="list">
                 <thead>
                     <tr>
-                        <th>Student Roll</th>
-                        <th>Student Name</th>
-                        <th>Year</th>
-                        <th>Stream</th>
+                        <th><font color="white">Student Roll</font></th>
+                        <th><font color="white">Student Name</font></th>
+                        <th><font color="white">Year</font></th>
+                        <th><font color="white">Stream</font></th>
                     </tr>
                 </thead>
                 <tbody>
