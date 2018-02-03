@@ -1,4 +1,4 @@
-function input_data() {
+var input_data = () => {
 
     let rows = "";
     const name = document.getElementById("name").value;
@@ -18,12 +18,12 @@ function input_data() {
     document.getElementById("stream").value = "";
 }
 
-function deleteRow(row) {
+var deleteRow = row => {
     const i = prompt("Enter the row you want to delete");
     document.getElementById("list").deleteRow(i);
 }
 
-function edit() {
+var edit = () => {
     const roll = prompt("Enter the roll number you want to edit");
     const trs = document.getElementsByTagName('tr');
     let j = 0;
